@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- This meta tag makes the page scale correctly on mobile screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layouts & Responsive Design</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- ================= SHORT SUMMARY ================= -->
+    <!-- I added this section to quickly explain the purpose of the assignment -->
+    <section class="summary">
+        <h2>Assignment Summary</h2>
+        <p>
+            This webpage demonstrates my use of CSS Grid and Flexbox to build a responsive layout.
+            Grid is used for the main page structure (sidebar + content), while Flexbox handles
+            navigation and the cards inside the content. Media queries make sure the design adapts
+            smoothly for desktop, tablet, and mobile views.
+        </p>
+    </section>
+
+    <!-- ================= HEADER ================= -->
+    <!-- The header has a title and a navigation bar -->
+    <header>
+        <h1>My Responsive Website</h1>
+        <nav class="navbar">
+            <ul>
+                <!-- Navigation links styled with Flexbox -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN LAYOUT ================= -->
+    <!-- Using Grid for the overall page structure -->
+    <main class="grid-layout">
+        <!-- Sidebar area -->
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This section can hold quick links, categories, or ads.</p>
+        </aside>
+
+        <!-- Content area -->
+        <section class="content">
+            <h2>Welcome!</h2>
+            <p>Resize the screen to see how the layout changes across devices.</p>
+
+            <!-- Flexbox example: card layout -->
+            <div class="card-container">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+            </div>
+
+            <!-- ================= DETAILED WRITE-UP ================= -->
+            <!-- This section explains all the steps I took in detail -->
+            <article class="writeup">
+                <h2>Assignment Write-Up</h2>
+                <p>
+                    I started by setting up the structure in HTML with a header, navigation, sidebar,
+                    content, and footer. This gave me a clear skeleton to work with.
+                </p>
+                <p>
+                    For the navigation bar, I used Flexbox because it makes it easy to align links
+                    in one row. On smaller screens, I used media queries to stack the links vertically
+                    so they remain readable.
+                </p>
+                <p>
+                    For the main layout, I chose CSS Grid. On desktop, the grid has two columns (sidebar
+                    and content). On tablets and mobile, the layout changes to one column so everything
+                    stacks nicely.
+                </p>
+                <p>
+                    Inside the content area, I styled the cards with Flexbox. On desktop, they display
+                    in a row, and on mobile, they stack into a column.
+                </p>
+                <p>
+                    I used media queries at 768px (tablet) and 480px (mobile) to adjust fonts, spacing,
+                    and layouts. This ensures the design looks good on all devices.
+                </p>
+                <p>
+                    Overall, I combined Grid for the big picture layout and Flexbox for smaller parts
+                    like navigation and cards, making the whole site flexible and responsive.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
